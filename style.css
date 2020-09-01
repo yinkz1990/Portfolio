@@ -45,8 +45,8 @@ strong {
     outline:3px solid var(--clr--accent);
     outline-offset:3px;
 }
-.btn{
-    display:inline-block;
+.btn_service{
+    display:block;
     padding:.5em 1.5em;
     background: var(--clr--accent);
     color:var(--clr--dark);
@@ -162,8 +162,8 @@ nav {
     color:var(--clr--light);
     text-align:center;
 }
-.servives{
-    margin-bottom:4em;
+.services{
+    margin-bottom: 4em;
 }
 .section_title--services{
     color:var(--clr--accent);
@@ -186,12 +186,47 @@ nav {
 @media(min-width:800px){
     .services{
         display:flex;
-        max-width:1000px;
+        max-width:1200px;
         margin-left:auto;
         margin-right:auto;
     }
 
     .service + .service {
-        margin-left:2em;
+        margin-left:2em;    }
+}
+
+
+.about_me{
+    max-width:1000px;
+    margin-left:0 auto;
+}
+.about_me--img{
+    box-shadow: var(--bs);
+}
+@media (min-width:600px) {
+    .about_me{
+        display:grid;
+        grid-template-columns: 1fr 200px;
+        grid-template-areas:
+            "title img"
+            "subtitle img"
+            "text img";
+        grid-column-gap: 2em;
     }
+
+    .section_title--about{
+        grid-area: title;
+    }
+    .section_subtitle--about{
+        grid-column:1/-1;
+        grid-row:2;
+        position:relative;
+        left:-2em;
+        width:calc(100% + 2em);
+       padding-left
+    }
+    .about_me--img{
+        grid-area:img;
+    }
+    
 }
