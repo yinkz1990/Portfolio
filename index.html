@@ -4,12 +4,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
- <!-- <link
+    <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
-    /> -->
+    />
     <link rel="stylesheet" type="text/css" href="/style.css?ver=2018101" />
     <link
       rel="stylesheet"
@@ -23,10 +23,13 @@
   </head>
   <body>
     <header>
-      <i class="fas fa-user-circle"></i>
+      <svg width="60" height="60" style="margin-left: 1em;">
+        <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow"/>
+          
+      </svg>
 
-      <nav class="nav-bar" id="nav">
-        <div class="dropdown">
+      <nav class="nav-bar float-right" id="nav">
+        <div class="dropdown dropleft">
           <i
             class="fas fa-bars btn dropleft"
             type="button"
@@ -36,7 +39,7 @@
             aria-expanded="false"
           >
           </i>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <div class="dropdown-menu " aria-labelledby="dropdownMenuButton">
             <a class="dropdown-item" href="#home">Home</a>
             <a class="dropdown-item" href="#services">Service</a>
             <a class="dropdown-item" href="#about_me">My work</a>
@@ -52,58 +55,68 @@
         Hi, I am <strong>Idumu Olayinka</strong>
       </h1>
       <p class="section_subtitle section_subtitle--intro">Front End Dev</p>
-      <img src="img/profilepics.jpg" alt="a picture of me smiling" class="intro_img" />
+      <img
+        src="img/profilepics.jpg"
+        alt="a picture of me smiling"
+        class="intro_img"
+      />
     </section>
 
     <!--section on my services -->
     <section class="my_services" id="services">
-        <h2 class="section_title section_title--services">What i do</h2>
-        <div class="services">
-            <div class="service">
-                <h3 class="">Design + Development</h3>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                    ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat. Duis aute irure dolor in
-                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                    culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-            </div>
-            <div class="service">
-                <h3 class="">Ecommerce</h3>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                    ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat. Duis aute irure dolor in
-                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                    culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-            </div>
-            <div class="service">
-                <h3 class="">WordPress</h3>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                    ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat. Duis aute irure dolor in
-                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                    culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-            </div>
+      <h2 class="section_title section_title--services">
+        What i do
+      </h2>
+      <div class="services">
+        <div class="service">
+          <h3 class="service_title">Design + Development</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
         </div>
-                   <a href="#work" class="btn_service">My work</a>
+        <div class="service">
+          <h3 class="service_title">Ecommerce</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+        <div class="service">
+          <h3 class="service_title">WordPress</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+      </div>
+      <a href="#work" class="btn_service">My work</a>
     </section>
 
     <!--section on profile -->
 
     <section class="about_me" id="about">
-      <h2 class="section_title section_title--about"></h2>
-      <p class="section_subtitle section_subttitle--about"></p>
+      <h2 class="section_title section_title--about">
+        Who I am
+      </h2>
+      <p class="section_subtitle section_subtitle--about">
+        Designer and Developer based in Lagos Nigeria
+      </p>
       <div class="about_me--body">
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -124,20 +137,20 @@
           culpa qui officia deserunt mollit anim id est laborum.
         </p>
       </div>
-      <img src="img/standing.jpg"  class="about_me--img"/>
+      <img src="img/standing.jpg" class="about_me--img" />
     </section>
     <!--section on my work-->
     <section class="my_work" id="work">
-      <h2 class="section_title">My work</h2>
-      <p class="section_subtitle section_subtitle--my_work">
+      <h2 class="section_title section_title--work">My work</h2>
+      <p class="section_subtitle section_subtitle--work">
         A selection of my range of work
       </p>
-      <div>
+      <div class="portfolio">
         <a href="#" class="portfolio_item"
-          ><img src="img/cristofer-j.jpg" alt="" class="portfolio_img"
+          ><img src="img/alex-ko.jpg" alt="" class="portfolio_img"
         /></a>
         <a href="#" class="portfolio_item"
-          ><img src="img/denys.jpg" alt="" class="portfolio_img"
+          ><img src="img/julie-.jpg" alt="" class="portfolio_img"
         /></a>
         <a href="#" class="portfolio_item"
           ><img src="img/noa.jpg" alt="" class="portfolio_img"
@@ -148,28 +161,37 @@
         <a href="#" class="portfolio_item"
           ><img src="img/ian-sch.jpg" alt="" class="portfolio_img"
         /></a>
+        <a href="#" class="portfolio_item"
+          ><img src="img/julie-.jpg" alt="" class="portfolio_img"
+        /></a>
       </div>
     </section>
 
-    <footer>
+    <footer class="footer">
       <a class="footer_link" href="">idumuolayinka@gmail.com</a>
-      <ul class="social_link">
-        <li class="footer_icon">
-          <a class="social_link-item" href="https://histagram.com">a</a>
+      <ul class="social_list">
+        <li class="social_list-item">
+          <a class="social_list-link" href="https://facebook.com"
+><i class="fab fa-facebook"></i
+          ></a>
         </li>
-        <li class="footer_icon">
-          <a class="social_link-item" href="https://facebook.com">b</a>
+        <li class="social_list-item">
+          <a class="social_list-link" href="https://twitter.com"
+            ><i class="fab fa-twitter"></i></a>
         </li>
-        <li class="footer_icon">
-          <a class="social_link-item" href="https://twitter.com">c</a>
+        <li class="social_list-item">
+          <a class="social_list-link" href="https://histagram.com"
+            ><i class="fab fa-instagram"></i></a>
         </li>
-        <li class="footer_icon">
-          <a class="social_link-item" href="https://github.com">d</a>
+        <li class="social_list-item">
+          <a class="social_list-link" href="https://github.com"
+            ><i class="fab fa-github"></i></i
+          ></a>
         </li>
+        
+        
       </ul>
     </footer>
-
-    <p>This is the poprtfolio</p>
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
