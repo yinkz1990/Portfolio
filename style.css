@@ -162,7 +162,7 @@ h3 {
 /* what i do section*/
 .my_services {
   background-color: var(--clr--dark);
-  background-image: url(img/clement-h.jpg);
+  background-image: url(https://res.cloudinary.com/edugrid/image/upload/v1599792910/clement-h_mwnaqh.jpg);
   background-size: cover;
   background-blend-mode: darken;
   color: var(--clr--light);
@@ -233,6 +233,8 @@ h3 {
 
   .section_title--about {
     grid-area: title;
+    font-weight: var(--fw--bold);
+    font-size: var(--fs-h2);
   }
   .section_subtitle--about {
     grid-column: 1/-1;
