@@ -4,12 +4,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-      crossorigin="anonymous"
-    />
     <link rel="stylesheet" type="text/css" href="/style.css?ver=2018101" />
     <link
       rel="stylesheet"
@@ -24,29 +18,22 @@
   <body>
     <header>
       <svg width="60" height="60" style="margin-left: 1em;">
-        <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow"/>
-          
+        <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow"/>   
       </svg>
+ 
+<button class="nav--toggle" aria-label="toggle navigation">
+   <span class="hamburger"></span>
+ </button>
 
-      <nav class="nav-bar float-right" id="nav">
-        <div class="dropdown dropleft">
-          <i
-            class="fas fa-bars btn dropleft"
-            type="button"
-            id="dropdownMenuButton"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-          >
-          </i>
-          <div class="dropdown-menu " aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="#home">Home</a>
-            <a class="dropdown-item" href="#services">Service</a>
-            <a class="dropdown-item" href="#about_me">My work</a>
-            <a class="dropdown-item" href="#my_projects">Projects</a>
-          </div>
-        </div>
-      </nav>
+ <nav class="nav">
+   <ul class="nav--list">
+     <li class="nav--item"><a href="#home" class="nav--link">Home</a></li>
+     <li class="nav--item"><a href=#services class="nav--link">My Services</a></li>
+     <li class="nav--item"><a href="#about_me" class="nav--link">About me</a></li>
+     <li class="nav--item"><a href="#my_work" class="nav--link">My Work</a></li>
+     <li class="nav--item"><a href="#skills" class="nav--link">Core Skills</a></li>
+   </ul>
+ </nav>
     </header>
 
     <!--section on introduction -->
@@ -61,6 +48,8 @@
         class="intro_img"
       />
     </section>
+
+    
 
     <!--section on my services -->
     <section class="my_services" id="services">
@@ -92,7 +81,7 @@
 
     <!--section on profile -->
 
-    <section class="about_me" id="about">
+    <section class="about_me" id="about_me">
       <h2 class="section_title section_title--about">
         Who I am
       </h2>
@@ -102,8 +91,7 @@
       <div class="about_me--body">
         <p>
           I am a self thought developer who has devoted time and resource to learn programming languages using online 
-          resources and meetups. I started learning web development because I wanted to kmow at least little about everything, but as time passed by i wanted to know more as it help me to think critical and brought out creativity
-          in me. I enrolled for course on udemy and am always downloading video on youtube. Prior to this time, i see it as an hobby
+          resources. I started learning web development because I wanted to know at least little about everything, but with time, i wanted to know more as it help me utilize some hidden potential in me such as critical thinking and creativity. I enrolled for courses on udemy and am always downloading video on youtube to learb more. Prior to this time, reading was my hobby
           but now I see myself contributing to the development of the workspace using my problems solving skills. I am versatile in both client side and server side languages like HTML, CSS, Javascript,
           React, Redux, React-Redux. React-Hooks, C#, MySQl, Microsoft SQL and MongoDb. 
         </p>
@@ -149,8 +137,7 @@
       <a class="footer_link" href="">idumuolayinka@gmail.com</a>
       <ul class="social_list">
         <li class="social_list-item">
-          <a class="social_list-link" href="https://www.facebook.com/idumuo"
-><i class="fab fa-facebook"></i
+          <a class="social_list-link" href="https://www.facebook.com/idumuo"><i class="fab fa-facebook"></i
           ></a>
         </li>
         <li class="social_list-item">
@@ -170,20 +157,6 @@
         
       </ul>
     </footer>
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-      crossorigin="anonymous"
-    ></script>
+    <script src="index.js"></script>
   </body>
 </html>
